@@ -22,7 +22,6 @@ public class bookingInsertServlet extends HttpServlet {
      */
     public bookingInsertServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -42,7 +41,6 @@ public class bookingInsertServlet extends HttpServlet {
 		try {
 			adminBookingDB.insertBooking(newBooking);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		response.sendRedirect("list");
@@ -51,7 +49,6 @@ public class bookingInsertServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
